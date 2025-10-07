@@ -29,7 +29,7 @@ const Hero = () => {
             </h1>
           </div>
           <div className="text-2xl md:text-3xl text-foreground/90 mb-4 font-light tracking-wide">
-            AI Developer & Machine Learning Engineer
+            AI Developer 
           </div>
           {/* Description removed for a cleaner look */}
         </div>
