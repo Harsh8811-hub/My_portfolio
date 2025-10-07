@@ -91,13 +91,7 @@ const Certifications = () => {
   };
 
   return (
-    <section className="py-20 px-6 bg-background relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-40 left-20 w-72 h-72 bg-gradient-to-br from-neon-cyan to-neon-purple rounded-full blur-3xl"></div>
-        <div className="absolute bottom-40 right-20 w-72 h-72 bg-gradient-to-br from-neon-purple to-neon-blue rounded-full blur-3xl"></div>
-      </div>
-
+    <section className="py-8 md:py-16 lg:py-20 px-6 relative overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-neon bg-clip-text text-transparent">

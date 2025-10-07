@@ -30,7 +30,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background relative pt-20 md:pt-12">
+    <div className="min-h-screen relative pt-16 md:pt-12">
       <Header />
       <section id="home">
         <Hero />

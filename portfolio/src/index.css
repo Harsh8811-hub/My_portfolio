@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Fluid background animations */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 /* AI Developer Portfolio Design System - Dark Tech Theme */
 
 @layer base {
@@ -22,7 +35,7 @@
     --primary-foreground: 222 47% 4%;
 
     /* Neural network secondary */
-    --secondary: 222 47% 12%;
+    --secondary: 222 100% 50%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 222 47% 15%;
@@ -134,10 +147,26 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
     position: relative;
     overflow-x: hidden;
+    background: transparent;
+  }
+
+  /* Ensure LiquidEther background is visible */
+  html,
+  body {
+    background: transparent !important;
+  }
+
+  /* Make sure main content doesn't have background that covers LiquidEther */
+  .min-h-screen {
+    background: transparent;
   }
 
   /* cursor-glow effect rules removed */
+}
+.text-transparent {
+  /* color: #18010100; */
+  color: rgb(10, 129, 226);
 }

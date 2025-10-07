@@ -5,11 +5,36 @@ import { Calendar, MapPin, Building } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
+      title: "AI Agentic & Automation Engineer",
+      company: "Business Optima",
+      location: "Remote",
+      period: "August 2025 - Present",
+      type: "Current",
+      description: [
+        "Developed and deployed AI agentic automation solutions to streamline business workflows and optimize operational efficiency",
+        "Built intelligent web scraping systems using Browser Use and agentic tools to extract structured data from dynamic websites",
+        "Designed and implemented AI-powered Gmail automation project using Gemini API and Google Cloud Platform for intelligent email processing",
+        "Created automated email analysis, response generation, event scheduling, and follow-up task management systems",
+        "Integrated multiple automation pipelines using Google Cloud Platform services to improve efficiency and deliver actionable insights",
+        "Optimized business processes by reducing manual effort through intelligent automation and AI-driven decision making",
+      ],
+      skills: [
+        "Gemini API",
+        "Google Cloud Platform",
+        "Browser Use",
+        "AI Automation",
+        "Web Scraping",
+        "Gmail API",
+        "Agentic AI",
+        "Workflow Automation",
+      ],
+    },
+    {
       title: "Project Intern",
       company: "IIT Madras",
       location: "Chennai, India",
-      period: "May 2025 - Current",
-      type: "Current",
+      period: "May 2025 - July 2025",
+      type: "Remote",
       description: [
         "Built a multimodal NDE assistant using Gemini 2.0, FAISS, LangChain, and Sentence Transformers",
         "Implemented secure PDF/DOCX/TXT parsing and vector retrieval systems",
@@ -100,13 +125,7 @@ const Experience = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-background relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-neon-cyan to-neon-purple rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-20 w-96 h-96 bg-gradient-to-br from-neon-purple to-neon-blue rounded-full blur-3xl"></div>
-      </div>
-
+    <section className="py-8 md:py-16 lg:py-20 px-6 relative overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Experience Section */}
         <div className="mb-20">

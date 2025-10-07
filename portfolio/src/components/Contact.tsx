@@ -61,12 +61,7 @@ const Contact = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gradient-neural relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-gradient-ai"></div>
-      </div>
-
+    <section className="py-8 md:py-16 lg:py-20 px-6 relative overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-neon bg-clip-text text-transparent">

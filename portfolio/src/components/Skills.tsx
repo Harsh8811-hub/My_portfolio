@@ -24,16 +24,36 @@ const Skills = () => {
       gradient: "from-neon-cyan to-neon-blue",
     },
     {
-      title: "AI/ML Frameworks",
+      title: "AI/ML & Automation",
       icon: <Brain className="h-6 w-6" />,
       skills: [
         "🧠 TensorFlow",
         "🔥 PyTorch",
         "⚡ Keras",
         "🔍 RAG",
-        "🟢 NodeJS",
+        "🤖 Gemini API",
+        "🌐 Browser Use",
+        "🤗 Hugging Face",
+        "⛓️ LangChain",
+        "🔍 FAISS",
+        "🤖 AI Automation",
+        "⚙️ Workflow Automation",
       ],
       gradient: "from-neon-purple to-neon-cyan",
+    },
+    {
+      title: "Web & Backend Development",
+      icon: <Layers className="h-6 w-6" />,
+      skills: [
+        "⚛️ React",
+        "🔄 Redux",
+        "🟨 JavaScript",
+        "🟢 NodeJS",
+        "🌐 Web Scraping",
+        "🔧 Agentic AI",
+        "📊 Process Optimization",
+      ],
+      gradient: "from-green-500 to-emerald-600",
     },
     {
       title: "Data Science Libraries",
@@ -49,33 +69,23 @@ const Skills = () => {
       gradient: "from-neon-blue to-neon-purple",
     },
     {
-      title: "Web & Backend",
-      icon: <Layers className="h-6 w-6" />,
-      skills: ["⚛️ React", "🔄 Redux", "🟨 JavaScript", "🟢 NodeJS"],
-      gradient: "from-green-500 to-emerald-600",
-    },
-    {
-      title: "AI Tools & Platforms",
-      icon: <Zap className="h-6 w-6" />,
-      skills: [
-        "🤗 Hugging Face",
-        "⛓️ LangChain",
-        "🔍 FAISS",
-        "🔄 Transformers",
-      ],
-      gradient: "from-neon-cyan to-neon-purple",
-    },
-    {
       title: "Development Tools",
       icon: <Settings className="h-6 w-6" />,
-      skills: [
-        "🐙 Git & GitHub",
-        "☸️ Kubernetes",
-        "🐳 Docker",
-        "📮 Postman",
-        "🔄 CI/CD",
-      ],
+      skills: ["🐙 Git & GitHub", "📮 Postman"],
       gradient: "from-neon-purple to-neon-blue",
+    },
+    {
+      title: "Cloud & DevOps",
+      icon: <Zap className="h-6 w-6" />,
+      skills: [
+        "☁️ Cloud Platforms",
+        "🌩️ Google Cloud Platform",
+        "🐳 Docker",
+        "☸️ Kubernetes",
+        "🔄 CI/CD",
+        "📧 Gmail API",
+      ],
+      gradient: "from-orange-500 to-red-600",
     },
     {
       title: "Specialized AI Tools",
@@ -92,12 +102,7 @@ const Skills = () => {
     {
       title: "Databases & Platforms",
       icon: <Database className="h-6 w-6" />,
-      skills: [
-        "🐬 MySQL",
-        "🐘 PostgreSQL",
-        "📊 Data Management",
-        "☁️ Cloud Platforms",
-      ],
+      skills: ["🐬 MySQL", "🐘 PostgreSQL", "📊 Data Management"],
       gradient: "from-purple-500 to-pink-600",
     },
     {
@@ -122,12 +127,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gradient-neural relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-ai"></div>
-      </div>
-
+    <section className="py-8 md:py-16 lg:py-20 px-6 relative overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-neon bg-clip-text text-transparent">

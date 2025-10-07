@@ -1,38 +1,33 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Phone, MessageCircle } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import CircularText from "./CircularText.tsx";
+import SplashCursor from "./SplashCursor";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated Background */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      />
-      <div className="absolute inset-0 bg-gradient-ai opacity-40" />
-      <div className="absolute inset-0 bg-neural-bg/20" />
-
-      {/* Floating Neural Nodes */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-20 w-2 h-2 bg-neon-cyan rounded-full animate-glow" />
-        <div className="absolute top-40 right-32 w-3 h-3 bg-neon-purple rounded-full animate-float" />
-        <div
-          className="absolute bottom-32 left-40 w-2 h-2 bg-neon-blue rounded-full animate-glow"
-          style={{ animationDelay: "1s" }}
-        />
-        <div
-          className="absolute bottom-20 right-20 w-3 h-3 bg-neon-cyan rounded-full animate-float"
-          style={{ animationDelay: "2s" }}
-        />
-      </div>
+      {/* Splash Cursor Effect */}
+      <SplashCursor />
 
       {/* Hero Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <div className="animate-slide-up">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-neon bg-clip-text text-transparent">
-            HARSH ABAKARI
-          </h1>
+          {/* Main Title with Circular Text on LEFT side */}
+          <div className="flex items-center justify-center gap-6 mb-6">
+            {/* Circular Text on LEFT */}
+            <div className="flex items-center justify-center">
+              <CircularText
+                text="HARSH*ABAKARI*"
+                onHover="speedUp"
+                spinDuration={20}
+                className="harsh-circular-text"
+              />
+            </div>
+            {/* Main HARSH heading */}
+            <h1 className="text-6xl md:text-8xl font-bold bg-gradient-neon bg-clip-text text-transparent">
+              HARSH
+            </h1>
+          </div>
           <div className="text-2xl md:text-3xl text-foreground/90 mb-4 font-light tracking-wide">
             AI Developer & Machine Learning Engineer
           </div>
