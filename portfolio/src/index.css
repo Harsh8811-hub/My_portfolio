@@ -164,8 +164,14 @@
     background: transparent;
   }
 
-  /* cursor-glow effect rules removed */
+  /* Basic button optimizations */
+  button,
+  [role="button"] {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
 }
+
 .text-transparent {
   /* color: #18010100; */
   color: rgb(10, 129, 226);

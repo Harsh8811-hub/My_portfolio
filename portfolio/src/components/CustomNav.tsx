@@ -317,7 +317,7 @@ const CustomNav: React.FC<CustomNavProps> = ({
               ? "visible pointer-events-auto"
               : "invisible pointer-events-none"
           }`}
-          aria-hidden={!isExpanded ? "true" : "false"}>
+          aria-hidden={!isExpanded}>
           {navItems.map((item, idx) => (
             <div
               key={`${item.label}-${idx}`}

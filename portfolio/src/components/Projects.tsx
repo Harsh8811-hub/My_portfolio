@@ -188,7 +188,7 @@ const Projects = () => {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="flex-1 bg-glass-bg/30 backdrop-blur-md border-neon-purple/30 text-foreground hover:bg-neon-purple/10 hover:border-neon-purple hover:shadow-glow transition-all duration-300">
+                    className="flex-1 bg-glass-bg/30 backdrop-blur-md border-neon-purple/30 text-foreground hover:bg-neon-purple/10 hover:border-neon-purple hover:shadow-glow hover:text-foreground active:text-foreground transition-all duration-300">
                     <Github className="mr-2 h-4 w-4" />
                     Source Code
                   </Button>
@@ -210,7 +210,7 @@ const Projects = () => {
             </p>
             <Button
               size="lg"
-              className="bg-gradient-neon text-background hover:opacity-90 transition-all duration-300 hover:scale-105"
+              className="bg-gradient-neon text-background hover:opacity-90 hover:text-background active:text-background transition-all duration-300 hover:scale-105"
               onClick={() => window.open("https://github.com/Harsh8811-hub")}>
               <Github className="mr-2 h-5 w-5" />
               Visit GitHub Profile

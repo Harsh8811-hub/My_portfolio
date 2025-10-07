@@ -41,7 +41,7 @@ const Hero = () => {
           <Button
             variant="outline"
             size="lg"
-            className="bg-glass-bg/30 backdrop-blur-md border-neon-cyan/30 text-foreground hover:bg-neon-cyan/10 hover:border-neon-cyan hover:shadow-neon transition-all duration-300"
+            className="bg-glass-bg/30 backdrop-blur-md border-neon-cyan/30 text-foreground hover:bg-neon-cyan/10 hover:border-neon-cyan hover:shadow-neon hover:text-foreground active:text-foreground transition-all duration-300"
             onClick={() =>
               window.open(
                 "https://mail.google.com/mail/?view=cm&fs=1&to=harshharsh811811@gmail.com",
@@ -54,7 +54,7 @@ const Hero = () => {
           <Button
             variant="outline"
             size="lg"
-            className="bg-glass-bg/30 backdrop-blur-md border-neon-purple/30 text-foreground hover:bg-neon-purple/10 hover:border-neon-purple hover:shadow-glow transition-all duration-300"
+            className="bg-glass-bg/30 backdrop-blur-md border-neon-purple/30 text-foreground hover:bg-neon-purple/10 hover:border-neon-purple hover:shadow-glow hover:text-foreground active:text-foreground transition-all duration-300"
             onClick={() => window.open("tel:+917795940400")}>
             <Phone className="mr-2 h-5 w-5" />
             Call Me
@@ -62,7 +62,7 @@ const Hero = () => {
           <Button
             variant="outline"
             size="lg"
-            className="bg-glass-bg/30 backdrop-blur-md border-neon-blue/30 text-foreground hover:bg-neon-blue/10 hover:border-neon-blue transition-all duration-300"
+            className="bg-glass-bg/30 backdrop-blur-md border-neon-blue/30 text-foreground hover:bg-neon-blue/10 hover:border-neon-blue hover:text-foreground active:text-foreground transition-all duration-300"
             onClick={() => window.open("https://wa.me/917795940400")}>
             <MessageCircle className="mr-2 h-5 w-5" />
             WhatsApp
@@ -76,14 +76,14 @@ const Hero = () => {
           <Button
             variant="ghost"
             size="lg"
-            className="text-foreground hover:text-neon-cyan hover:bg-neon-cyan/10 transition-all duration-300 hover:scale-110"
+            className="text-foreground hover:text-neon-cyan hover:bg-neon-cyan/10 active:text-foreground transition-all duration-300 hover:scale-110"
             onClick={() => window.open("https://github.com/Harsh8811-hub")}>
             <Github className="h-6 w-6" />
           </Button>
           <Button
             variant="ghost"
             size="lg"
-            className="text-foreground hover:text-neon-blue hover:bg-neon-blue/10 transition-all duration-300 hover:scale-110"
+            className="text-foreground hover:text-neon-blue hover:bg-neon-blue/10 active:text-foreground transition-all duration-300 hover:scale-110"
             onClick={() =>
               window.open("https://www.linkedin.com/in/harsh-151277228/")
             }>

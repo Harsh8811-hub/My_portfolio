@@ -83,7 +83,7 @@ const Contact = () => {
               {contactMethods.map((method, index) => (
                 <Card
                   key={method.title}
-                  className={`p-6 bg-glass-bg/30 backdrop-blur-md border-border/50 hover:border-neon-cyan/50 transition-all duration-500 hover:shadow-neural hover:scale-105 animate-slide-up cursor-pointer group`}
+                  className={`p-6 bg-glass-bg/30 backdrop-blur-md border-border/50 hover:border-neon-cyan/50 transition-all duration-500 hover:shadow-neural hover:scale-105 animate-slide-up cursor-pointer group active:scale-95 active:bg-glass-bg/40`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                   onClick={method.action}>
                   <div className="flex items-center">
@@ -92,17 +92,17 @@ const Contact = () => {
                       {method.icon}
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-lg font-semibold text-foreground mb-1">
+                      <h4 className="text-lg font-semibold text-foreground mb-1 group-hover:text-foreground group-active:text-foreground">
                         {method.title}
                       </h4>
-                      <p className="text-neon-cyan font-mono text-sm mb-1">
+                      <p className="text-neon-cyan font-mono text-sm mb-1 group-hover:text-neon-cyan group-active:text-neon-cyan">
                         {method.value}
                       </p>
-                      <p className="text-muted-foreground text-sm">
+                      <p className="text-muted-foreground text-sm group-hover:text-muted-foreground group-active:text-muted-foreground">
                         {method.description}
                       </p>
                     </div>
-                    <Send className="h-5 w-5 text-muted-foreground group-hover:text-neon-cyan transition-colors duration-300" />
+                    <Send className="h-5 w-5 text-muted-foreground group-hover:text-neon-cyan group-active:text-neon-cyan transition-colors duration-300" />
                   </div>
                 </Card>
               ))}
@@ -118,7 +118,7 @@ const Contact = () => {
               {socialLinks.map((link, index) => (
                 <Card
                   key={link.name}
-                  className={`p-6 bg-glass-bg/30 backdrop-blur-md border-border/50 hover:border-neon-purple/50 transition-all duration-500 hover:shadow-neural hover:scale-105 animate-slide-up cursor-pointer group`}
+                  className={`p-6 bg-glass-bg/30 backdrop-blur-md border-border/50 hover:border-neon-purple/50 transition-all duration-500 hover:shadow-neural hover:scale-105 animate-slide-up cursor-pointer group active:scale-95 active:bg-glass-bg/40`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                   onClick={() => window.open(link.url)}>
                   <div className="flex items-center">
@@ -126,13 +126,13 @@ const Contact = () => {
                       {link.icon}
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-lg font-semibold text-foreground mb-1">
+                      <h4 className="text-lg font-semibold text-foreground mb-1 group-hover:text-foreground group-active:text-foreground">
                         {link.name}
                       </h4>
-                      <p className="text-neon-purple font-mono text-sm mb-1">
+                      <p className="text-neon-purple font-mono text-sm mb-1 group-hover:text-neon-purple group-active:text-neon-purple">
                         {link.username}
                       </p>
-                      <p className="text-muted-foreground text-sm">
+                      <p className="text-muted-foreground text-sm group-hover:text-muted-foreground group-active:text-muted-foreground">
                         {link.description}
                       </p>
                     </div>
