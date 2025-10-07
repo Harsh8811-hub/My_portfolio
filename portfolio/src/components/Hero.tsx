@@ -29,7 +29,7 @@ const Hero = () => {
             </h1>
           </div>
           <div className="text-2xl md:text-3xl text-foreground/90 mb-4 font-light tracking-wide">
-            AI Developer 
+            AI Developer
           </div>
           {/* Description removed for a cleaner look */}
         </div>
@@ -42,12 +42,7 @@ const Hero = () => {
             variant="outline"
             size="lg"
             className="bg-glass-bg/30 backdrop-blur-md border-neon-cyan/30 text-foreground hover:bg-neon-cyan/10 hover:border-neon-cyan hover:shadow-neon hover:text-foreground active:text-foreground transition-all duration-300"
-            onClick={() =>
-              window.open(
-                "https://mail.google.com/mail/?view=cm&fs=1&to=harshharsh811811@gmail.com",
-                "_blank"
-              )
-            }>
+            onClick={() => window.open("mailto:harshharsh811811@gmail.com")}>
             <Mail className="mr-2 h-5 w-5" />
             Email Me
           </Button>
