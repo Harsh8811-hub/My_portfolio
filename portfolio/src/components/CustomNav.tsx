@@ -298,14 +298,15 @@ const CustomNav: React.FC<CustomNavProps> = ({
               } group-hover:opacity-75`}
             />
           </div>
-
-          {/* Harsh in the center */}
+          {/* Resume download link in the center */}
           <div className="logo-container flex items-center md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 order-2 md:order-none">
-            <span className="font-bold text-xl tracking-wide bg-gradient-neon bg-clip-text text-transparent">
-              Harsh
-            </span>
+            <a
+              href="/Harsh_1.pdf"
+              download
+              className="font-bold text-sm md:text-base tracking-wide bg-gradient-neon bg-clip-text text-transparent">
+              CLICK HERE TO DOWNLOAD RESUME
+            </a>
           </div>
-
           {/* Empty space for balance */}
           <div className="order-3 md:order-none w-[30px]" />
         </div>
